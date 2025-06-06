@@ -1,32 +1,43 @@
 <div align="center">
 
-# AKiRa: Augmentation Kit on Rays for optical video generation
+# AKiRa: Augmentation Kit on Rays for Optical Video Generation
 
-<a href="https://triocrossing.github.io/"><strong>Xi Wang</strong></a>
-·
-<a href="https://robincourant.github.io/info/"><strong>Robin Courant</strong></a>
-·
-<a href="http://people.irisa.fr/Marc.Christie/"><strong>Marc Christie</strong></a>
-·
-<a href="https://vicky.kalogeiton.info/"><strong>Vicky Kalogeiton</strong></a>
+**[Xi Wang](https://triocrossing.github.io/)**, **[Robin Courant](https://robincourant.github.io/info/)**, **[Marc Christie](http://people.irisa.fr/Marc.Christie/)**, **[Vicky Kalogeiton](https://vicky.kalogeiton.info/)**  
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+[**🌐 Project Webpage**](https://www.lix.polytechnique.fr/vista/projects/2024_akira_wang/)
 
 </div>
-
-
-<div align="center">
-    <a href="https://www.lix.polytechnique.fr/vista/projects/2024_akira_wang/" class="button"><b>[Webpage]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-</div>
-
-<br/>
-
-![Teaser](./assets/teaser.png)
 
 ---
 
-Code coming soon ...
+![Teaser](./assets/teaser.png)
+
+## Overview
+
+As a **TL;DR**:  
+We introduce **AKiRa (Augmentation Kit on Rays)** — a ray-space augmentation framework using **Plücker coordinates** that enables video generation models to directly control camera and lens parameters, including:  
+**focal length**, **lens distortion**, **aperture**, and **focus point** (for bokeh effects).
+
+---
+
+## 🔬 Benchmark: FlowSim
+
+Evaluating camera-to-video models can be challenging, especially when traditional pose estimation metrics like Absolute Pose Error (APE) and Relative Pose Error (RPE) are unreliable due to short baselines or shaky camera motions.
+
+**FlowSim** offers a robust alternative by computing optical flow similarity between videos, providing a scalable metric to assess camera motion consistency in generated videos.
+
+**Key Features of FlowSim:**
+- **Pose-Free Evaluation**: Eliminates the need for explicit camera pose estimation.
+- **Robustness**: Effective in scenarios with small translations or unstable camera movements.
+- **Scalability**: Suitable for large-scale evaluations of synthetic-to-real generalization.
+
+👉 **Explore the FlowSim repository:**  
+**[Triocrossing/FlowSim](https://github.com/Triocrossing/FlowSim)**
+
+---
 
 ## License
 
-This code is distributed under an [MIT LICENSE](LICENSE).
+This project is licensed under the terms of the [MIT License](LICENSE).
