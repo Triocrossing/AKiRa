@@ -36,6 +36,18 @@ Evaluating camera-to-video models can be challenging, especially when traditiona
 👉 **Explore the FlowSim repository:**  
 **[Triocrossing/FlowSim](https://github.com/Triocrossing/FlowSim)**
 
+## 🚀 Training
+
+```bash
+bash ./dist_run.sh configs/train_akira/svd_320_576.yaml N_GPU train_akira.py
+```
+
+**📦 Pretrained Checkpoints**:  
+We will release pretrained checkpoints soon — stay tuned!
+
+**🙏 Acknowledgment**  
+Part of the codebase is adapted from [CameraCtrl](https://github.com/hehao13/CameraCtrl) — many thanks to the authors for their excellent work and their project!
+
 ---
 
 ## License
