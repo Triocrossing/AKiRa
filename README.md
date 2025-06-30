@@ -43,7 +43,7 @@ bash ./dist_run.sh configs/train_akira/svd_320_576.yaml N_GPU train_akira.py
 ```
 
 **📦 Pretrained Checkpoints**:  
-We will release pretrained checkpoints soon — stay tuned!
+🤗[akira checkpoint](https://huggingface.co/xi-wang/akira) on Huggingface
 
 **🙏 Acknowledgment**  
 Part of the codebase is adapted from [CameraCtrl](https://github.com/hehao13/CameraCtrl) — many thanks to the authors for their excellent work and their project!
